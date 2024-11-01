@@ -9,16 +9,16 @@ public class Swimming : Activity
 
     public override double GetDistance()
     {
-        return (laps * 50) / 1000.0; // Distance in kilometers
+        return (laps * 50) / 1000.0; 
     }
 
     public override double GetSpeed()
     {
-        return (GetDistance() / Minutes) * 60; // Speed in kilometers per hour
+        return (GetDistance() / Minutes) * 60; 
     }
 
     public override double GetPace()
     {
-        return Minutes / GetDistance(); // Pace in minutes per kilometer
+        return Minutes / GetDistance(); 
     }
 }
